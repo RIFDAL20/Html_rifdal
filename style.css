@@ -1,8 +1,8 @@
-/* Styling Umum & Latar Belakang */
+/* Styling Umum & Latar Belakang Dark Mode */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #ff7fb0 0%, #ffa1d0 100%);
-    color: #333;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -19,12 +19,13 @@ body {
     gap: 15px; /* Jarak antar card ke bawah */
 }
 
-/* Setiap Card Berwarna Putih */
-.card, .header-card, .footer-card {
-    background-color: #ffcde9;
+/* Setiap Card Berwarna Gelap Elegan */
+.card, .footer-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
 }
 
@@ -38,77 +39,80 @@ body {
 
 .header-card h1 {
     margin: 0 0 5px 0;
-    color: #ffffff;
+    color: #38bdf8; /* Biru cerah accent */
     font-size: 2.2rem;
 }
 
 .header-card p {
     margin: 0;
-    color: #ffffff;
+    color: #94a3b8;
     font-size: 1.1rem;
 }
 
 /* Heading di dalam Card */
 .card h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #eaeaea;
+    color: #38bdf8;
+    border-bottom: 2px solid #334155;
     padding-bottom: 8px;
     margin-top: 0;
     font-size: 1.2rem;
 }
 
-/* Tabel */
+/* Tabel Dark Mode */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
     overflow: hidden;
     border-radius: 6px;
+    background-color: #0f172a;
 }
 
 th, td {
     padding: 10px 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #334155;
     font-size: 0.9rem;
+    color: #cbd5e1;
 }
 
 th {
-    background-color: #ff8aca;
-    color: rgb(255, 252, 253);
+    background-color: #3b82f6;
+    color: #ffffff;
 }
 
 tr:hover {
-    background-color: #f1f1f1;
+    background-color: #1e293b;
 }
 
 /* Blok Kode */
 pre {
-    background-color: #1e1e1e;
-    color: #d4d4d4;
+    background-color: #090d16;
+    color: #38bdf8;
     padding: 15px;
     border-radius: 8px;
     overflow-x: auto;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.85rem;
+    border: 1px solid #334155;
 }
 
 code {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #ff9dcb;
-    padding: 2px 5px;
+    background-color: #334155;
+    padding: 2px 6px;
     border-radius: 4px;
-    color: #c7254e;
+    color: #f43f5e;
     font-size: 0.85rem;
 }
 
 pre code {
     background-color: transparent;
-    color: #d4d4d4;
+    color: #38bdf8;
     padding: 0;
 }
 
-/* Formulir */
+/* Formulir Dark Mode */
 form {
     display: flex;
     flex-direction: column;
@@ -119,6 +123,7 @@ form {
 label {
     font-weight: bold;
     font-size: 0.9rem;
+    color: #cbd5e1;
 }
 
 input[type="text"],
@@ -126,10 +131,19 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    background-color: #0f172a;
+    border: 1px solid #334155;
     border-radius: 6px;
     box-sizing: border-box;
     font-size: 0.9rem;
+    color: #f8fafc;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
 }
 
 textarea {
@@ -138,24 +152,26 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #f156a4;
-    color: rgb(255, 188, 219);
+    background-color: #2563eb;
+    color: #ffffff;
     padding: 10px 18px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
     align-self: flex-start;
+    transition: background-color 0.2s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #e64279;
+    background-color: #1d4ed8;
 }
 
 /* List */
 ul, ol {
     margin: 5px 0;
     padding-left: 25px;
+    color: #cbd5e1;
 }
 
 li {
@@ -165,12 +181,13 @@ li {
 
 /* Footer Card */
 .footer-card {
-    background-color: #e7579b;
-    color: white;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    color: #f8fafc;
     text-align: center;
 }
 
 .footer-card h2 {
-    color: white;
+    color: #38bdf8;
     border-bottom: none;
 }
